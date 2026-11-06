@@ -34,31 +34,31 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 // photo: cesta k fotce ve složce IMG
 const ITEMS = {
   tea: {
-    photo: 'IMG/867406006_18115543799021674_6986882147659581351_n.webp',
+    photo: '867406006_18115543799021674_6986882147659581351_n.webp',
     alt: 'Mléčný bubble tea s tapiokovými perlami v ruce',
     tag: 'Nejoblíbenější',
     desc: 'Čaj, mléko nebo ovoce a na dně žvýkací perly. Podle našich zákazníků nejlepší bubble tea v okolí.'
   },
   coffee: {
-    photo: 'IMG/848170183_18113528954021674_6414360546930213852_n.webp',
+    photo: '848170183_18113528954021674_6414360546930213852_n.webp',
     alt: 'Cappuccino s latte art na stolku venku',
     tag: 'Z brazilských zrn',
     desc: 'Na rychlé espresso po cestě i na pomalé cappuccino k dezertu. Káva, kvůli které stojí za to zastavit.'
   },
   ice: {
-    photo: 'IMG/845483574_18113222252021674_8766040224482675115_n.webp',
+    photo: '845483574_18113222252021674_8766040224482675115_n.webp',
     alt: 'Mangová točená zmrzlina v kornoutu',
     tag: 'Vanilka · Mango · Mix',
     desc: 'Točená zmrzlina v kornoutu i v kelímku. Vanilková, mangová nebo obojí – proč si vybírat.'
   },
   frappe: {
-    photo: 'IMG/757454747_18102570536021674_7661208918829281333_n.webp',
+    photo: '757454747_18102570536021674_7661208918829281333_n.webp',
     alt: 'Ledové frappé ve skle',
     tag: 'Ledové osvěžení',
     desc: 'Krémové a ledové. Nejlepší způsob, jak přežít horké odpoledne – a k tomu něco sladkého.'
   },
   dessert: {
-    photo: 'IMG/768555291_18104485046021674_1542284532686548519_n.webp',
+    photo: '768555291_18104485046021674_1542284532686548519_n.webp',
     alt: 'Ovocné tartaletky s borůvkami',
     tag: 'Sladká tečka',
     desc: 'Ovocné tartaletky, tiramisu, laskonky a další dobroty. Co je zrovna v nabídce, uvidíš na Instagramu.'
