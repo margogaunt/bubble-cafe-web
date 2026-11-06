@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bubble Cafe – Káva &amp; Bubble Tea Golčův Jeníkov</title>
+  <meta name="description" content="Brazilská káva, bubble tea, točená zmrzlina, frappé a dezerty. Husova 86, Golčův Jeníkov. Otevřeno každý den.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a href="#top" class="logo" aria-label="Bubble Cafe – domů">
+        <span class="logo__dot"></span>Bubble&nbsp;Cafe
+      </a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="menu">
+        <a href="#nabidka">Nabídka</a>
+        <a href="#akce">Akce</a>
+        <a href="#recenze">Recenze</a>
+        <a href="#kontakt">Kde nás najdete</a>
+        <a href="tel:+420720680461" class="btn btn--small">Zavolat</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Golčův Jeníkov · Husova 86</p>
+          <h1>Káva, bubble&nbsp;tea<br>a <span class="hl">zmrzlina</span>.</h1>
+          <p class="lead">Malé místo s velkou chutí. Brazilská káva, bublinkové čaje, točená zmrzlina, frappé a sladké dezerty – každý den v týdnu.</p>
+          <div class="hero__cta">
+            <a href="#nabidka" class="btn">Co u nás máme</a>
+            <a href="#kontakt" class="btn btn--ghost">Otevírací doba</a>
+          </div>
+          <p class="hero__status" id="openStatus" aria-live="polite"></p>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <div class="blob"></div>
+          <!-- Bubble tea illustration -->
+          <svg class="cup" viewBox="0 0 220 320">
+            <rect x="128" y="0" width="16" height="120" rx="6" fill="#1d1a14" transform="rotate(12 136 60)"/>
+            <path d="M30 70 h160 l-20 230 a14 14 0 0 1 -14 12 h-92 a14 14 0 0 1 -14 -12z" fill="#fff8e1" stroke="#1d1a14" stroke-width="6"/>
+            <path d="M40 130 h140 l-14 165 a8 8 0 0 1 -8 7 h-96 a8 8 0 0 1 -8 -7z" fill="#f2a33a"/>
+            <g fill="#1d1a14">
+              <circle cx="70" cy="280" r="10"/><circle cx="95" cy="286" r="10"/><circle cx="120" cy="282" r="10"/><circle cx="145" cy="286" r="10"/>
+              <circle cx="82" cy="262" r="10"/><circle cx="108" cy="264" r="10"/><circle cx="134" cy="262" r="10"/><circle cx="158" cy="266" r="9"/>
+              <circle cx="60" cy="262" r="8"/>
+            </g>
+            <rect x="20" y="58" width="180" height="22" rx="11" fill="#ebc000" stroke="#1d1a14" stroke-width="6"/>
+          </svg>
+          <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
+          <div class="sticker">5,0 ★<small>Google recenze</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Brazilská káva</span><span>✦</span><span>Bubble tea</span><span>✦</span><span>Točená zmrzlina</span><span>✦</span><span>Frappé</span><span>✦</span><span>Dezerty</span><span>✦</span>
+        <span>Brazilská káva</span><span>✦</span><span>Bubble tea</span><span>✦</span><span>Točená zmrzlina</span><span>✦</span><span>Frappé</span><span>✦</span><span>Dezerty</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- NABÍDKA -->
+    <section class="section" id="nabidka">
+      <div class="wrap">
+        <p class="eyebrow">Nabídka</p>
+        <h2>Na co se u nás můžete těšit</h2>
+        <div class="cards">
+          <article class="card card--coffee">
+            <div class="card__icon">☕</div>
+            <h3>Brazilská káva</h3>
+            <p>Káva z brazilských zrn – na rychlé espresso po cestě i na pomalé latte k dezertu.</p>
+          </article>
+          <article class="card card--tea">
+            <div class="card__icon">🧋</div>
+            <h3>Bubble tea</h3>
+            <p>Bublinkové čaje v různých příchutích. Podle našich zákazníků ten nejlepší v okolí.</p>
+          </article>
+          <article class="card card--ice">
+            <div class="card__icon">🍦</div>
+            <h3>Točená zmrzlina</h3>
+            <p>Vanilka, mango nebo mix – v kornoutu i v kelímku. Když je teplo, nic lepšího není.</p>
+          </article>
+          <article class="card card--frappe">
+            <div class="card__icon">🥤</div>
+            <h3>Frappé</h3>
+            <p>Ledové, krémové a se šlehačkou. Osvěžení s sebou na cestu.</p>
+          </article>
+          <article class="card card--dessert">
+            <div class="card__icon">🍰</div>
+            <h3>Dezerty</h3>
+            <p>Tiramisu, ovocné tartaletky, laskonky a košíčky se šlehačkou. Nabídka se střídá – mrkněte na Instagram.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AKCE -->
+    <section class="promo" id="akce">
+      <div class="wrap promo__inner">
+        <div class="promo__badge">−50&nbsp;%</div>
+        <div>
+          <p class="eyebrow eyebrow--dark">Aktuální akce</p>
+          <h2>K dezertu káva za polovinu</h2>
+          <p>Vyberte si jakýkoliv dezert a kávu k němu máte za poloviční cenu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENZE -->
+    <section class="section" id="recenze">
+      <div class="wrap">
+        <p class="eyebrow">Recenze</p>
+        <h2>5,0 <span class="stars" aria-label="5 hvězdiček">★★★★★</span></h2>
+        <p class="muted">Průměr z 26 hodnocení na Mapách Google.</p>
+        <div class="quotes">
+          <blockquote>
+            <p>„Skvělá zmrzlina a nejlepší bubble tea! Milujeme to tady.“</p>
+            <cite>Simona T.</cite>
+          </blockquote>
+          <blockquote>
+            <p>„Nejlepší bubble tea.“</p>
+            <cite>Jakub</cite>
+          </blockquote>
+          <blockquote>
+            <p>„Fajn zmrzlina, na cestě potěší.“</p>
+            <cite>Jakub Č.</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section section--alt" id="kontakt">
+      <div class="wrap contact">
+        <div class="contact__info">
+          <p class="eyebrow">Kde nás najdete</p>
+          <h2>Zastavte se</h2>
+          <address>
+            <strong>Bubble Cafe</strong><br>
+            Husova 86<br>
+            582 82 Golčův Jeníkov
+          </address>
+          <p><a href="tel:+420720680461" class="link">720 680 461</a></p>
+
+          <table class="hours" aria-label="Otevírací doba">
+            <tbody>
+              <tr data-day="1"><th>Pondělí</th><td>11–18</td></tr>
+              <tr data-day="2"><th>Úterý</th><td>11–18</td></tr>
+              <tr data-day="3"><th>Středa</th><td>11–18</td></tr>
+              <tr data-day="4"><th>Čtvrtek</th><td>11–18</td></tr>
+              <tr data-day="5"><th>Pátek</th><td>11–18</td></tr>
+              <tr data-day="6"><th>Sobota</th><td>10–18</td></tr>
+              <tr data-day="0"><th>Neděle</th><td>10–18</td></tr>
+            </tbody>
+          </table>
+
+          <a class="btn" href="https://maps.app.goo.gl/pbF3T8M5UBwDashRA" target="_blank" rel="noopener">Navigovat</a>
+        </div>
+        <div class="contact__map">
+          <iframe
+            title="Mapa – Bubble Cafe, Husova 86, Golčův Jeníkov"
+            src="https://maps.google.com/maps?q=49.8180488,15.4758222&z=17&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a href="#top" class="logo logo--light"><span class="logo__dot"></span>Bubble&nbsp;Cafe</a>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/kavaabubble/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@kavaabubble" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <p class="footer__copy">© <span id="year"></span> Káva &amp; Bubble Tea Golčův Jeníkov</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
