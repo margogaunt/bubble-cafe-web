@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recenze – Bubble Cafe Golčův Jeníkov</title>
+  <meta name="description" content="Bubble Cafe má hodnocení 5,0 z 26 recenzí na Mapách Google.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..900;1,9..40,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="IMG/708794094_18092274095021674_8489062694724276682_n.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="logo" aria-label="Bubble Cafe – úvod">
+        <span class="logo__badge" aria-hidden="true"><img src="IMG/708794094_18092274095021674_8489062694724276682_n.jpg" alt="" width="1080" height="1080"></span>
+        Bubble Cafe
+      </a>
+      <nav class="nav__menu" id="menu" aria-label="Hlavní menu">
+        <a href="nabidka.html">Nabídka</a>
+        <a href="akce.html">Akce</a>
+        <a href="recenze.html" aria-current="page">Recenze</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Otevřít menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-head page-head--blush">
+      <div class="wrap">
+        <p class="kicker">Recenze</p>
+        <h1>Co o&nbsp;nás <em>říkáte</em></h1>
+        <div class="reviews__score">
+          <span class="reviews__num">5,0</span>
+          <div>
+            <span class="reviews__stars" role="img" aria-label="5 z 5 hvězdiček">★★★★★</span>
+            <p class="reviews__count">26 recenzí na Mapách Google</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="reviews">
+      <div class="wrap">
+        <ul class="reviews__list">
+          <li class="quote reveal">
+            <span class="quote__stars" role="img" aria-label="5 z 5 hvězdiček">★★★★★</span>
+            <blockquote><p>„Skvělá zmrzlina a&nbsp;nejlepší bubble tea! Milujeme to tady.“</p></blockquote>
+            <p class="quote__name">Simona T.</p>
+          </li>
+          <li class="quote reveal">
+            <span class="quote__stars" role="img" aria-label="5 z 5 hvězdiček">★★★★★</span>
+            <blockquote><p>„Nejlepší bubble tea.“</p></blockquote>
+            <p class="quote__name">Jakub</p>
+          </li>
+          <li class="quote reveal">
+            <span class="quote__stars" role="img" aria-label="5 z 5 hvězdiček">★★★★★</span>
+            <blockquote><p>„Fajn zmrzlina, na cestě potěší.“</p></blockquote>
+            <p class="quote__name">Jakub Č.</p>
+          </li>
+        </ul>
+
+        <div class="reviews__cta reveal">
+          <a class="pill pill--dark pill--lg" href="https://maps.app.goo.gl/pbF3T8M5UBwDashRA" target="_blank" rel="noopener">Všechny recenze na Googlu&nbsp;→</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__row">
+        <p class="footer__hello">Uvidíme se u&nbsp;okénka.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/kavaabubble/" target="_blank" rel="noopener" class="pill pill--dark">Instagram</a>
+          <a href="https://www.tiktok.com/@kavaabubble" target="_blank" rel="noopener" class="pill pill--ghost">TikTok</a>
+        </div>
+      </div>
+      <p class="footer__word" aria-hidden="true">Bubble Cafe</p>
+      <p class="footer__egg">Až na dno kelímku! Tady jsou tvoje perly <i></i><i></i><i></i></p>
+      <p class="footer__copy">© <span id="year"></span> Káva &amp; Bubble Tea Golčův Jeníkov</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nabídka – Bubble Cafe Golčův Jeníkov</title>
+  <meta name="description" content="Bubble tea, brazilská káva, točená zmrzlina, frappé a dezerty v Bubble Cafe v Golčově Jeníkově.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..900;1,9..40,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="IMG/708794094_18092274095021674_8489062694724276682_n.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="logo" aria-label="Bubble Cafe – úvod">
+        <span class="logo__badge" aria-hidden="true"><img src="IMG/708794094_18092274095021674_8489062694724276682_n.jpg" alt="" width="1080" height="1080"></span>
+        Bubble Cafe
+      </a>
+      <nav class="nav__menu" id="menu" aria-label="Hlavní menu">
+        <a href="nabidka.html" aria-current="page">Nabídka</a>
+        <a href="akce.html">Akce</a>
+        <a href="recenze.html">Recenze</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Otevřít menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-head page-head--butter">
+      <div class="wrap">
+        <p class="kicker">Nabídka</p>
+        <h1>Vyber si svou <em>dobrotu</em></h1>
+      </div>
+    </header>
+
+    <section class="menu">
+      <div class="wrap">
+        <div class="menu__grid">
+          <ol class="menu__list" role="tablist" aria-label="Nabídka">
+            <li><button class="menu__item is-active" role="tab" aria-selected="true" data-item="tea">
+              <span class="menu__num">01</span><span class="menu__name">Bubble tea</span></button></li>
+            <li><button class="menu__item" role="tab" aria-selected="false" data-item="coffee">
+              <span class="menu__num">02</span><span class="menu__name">Brazilská káva</span></button></li>
+            <li><button class="menu__item" role="tab" aria-selected="false" data-item="ice">
+              <span class="menu__num">03</span><span class="menu__name">Točená zmrzlina</span></button></li>
+            <li><button class="menu__item" role="tab" aria-selected="false" data-item="frappe">
+              <span class="menu__num">04</span><span class="menu__name">Frappé</span></button></li>
+            <li><button class="menu__item" role="tab" aria-selected="false" data-item="dessert">
+              <span class="menu__num">05</span><span class="menu__name">Dezerty</span></button></li>
+          </ol>
+
+          <div class="menu__stage" role="tabpanel" aria-live="polite">
+            <div class="menu__media">
+              <img class="menu__photo" id="menuPhoto" src="IMG/867406006_18115543799021674_6986882147659581351_n.webp" alt="Mléčný bubble tea s tapiokovými perlami v ruce" width="1440" height="1440">
+            </div>
+            <div class="menu__copy">
+              <p class="menu__tag" id="menuTag">Nejoblíbenější</p>
+              <p class="menu__desc" id="menuDesc">Čaj, mléko nebo ovoce a na dně žvýkací perly. Podle našich zákazníků nejlepší bubble tea v okolí.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__row">
+        <p class="footer__hello">Uvidíme se u&nbsp;okénka.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/kavaabubble/" target="_blank" rel="noopener" class="pill pill--dark">Instagram</a>
+          <a href="https://www.tiktok.com/@kavaabubble" target="_blank" rel="noopener" class="pill pill--ghost">TikTok</a>
+        </div>
+      </div>
+      <p class="footer__word" aria-hidden="true">Bubble Cafe</p>
+      <p class="footer__egg">Až na dno kelímku! Tady jsou tvoje perly <i></i><i></i><i></i></p>
+      <p class="footer__copy">© <span id="year"></span> Káva &amp; Bubble Tea Golčův Jeníkov</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

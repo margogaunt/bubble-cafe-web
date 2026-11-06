@@ -7,185 +7,100 @@
   <meta name="description" content="Brazilská káva, bubble tea, točená zmrzlina, frappé a dezerty. Husova 86, Golčův Jeníkov. Otevřeno každý den.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..900;1,9..40,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="IMG/708794094_18092274095021674_8489062694724276682_n.jpg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="nav" id="top">
+  <header class="nav">
     <div class="wrap nav__inner">
-      <a href="#top" class="logo" aria-label="Bubble Cafe – domů">
-        <span class="logo__dot"></span>Bubble&nbsp;Cafe
+      <a href="index.html" class="logo" aria-label="Bubble Cafe – úvod">
+        <span class="logo__badge" aria-hidden="true"><img src="IMG/708794094_18092274095021674_8489062694724276682_n.jpg" alt="" width="1080" height="1080"></span>
+        Bubble Cafe
       </a>
-      <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+      <nav class="nav__menu" id="menu" aria-label="Hlavní menu">
+        <a href="nabidka.html">Nabídka</a>
+        <a href="akce.html">Akce</a>
+        <a href="recenze.html">Recenze</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Otevřít menu" aria-expanded="false" aria-controls="menu">
         <span></span><span></span>
       </button>
-      <nav class="nav__menu" id="menu">
-        <a href="#nabidka">Nabídka</a>
-        <a href="#akce">Akce</a>
-        <a href="#recenze">Recenze</a>
-        <a href="#kontakt">Kde nás najdete</a>
-        <a href="tel:+420720680461" class="btn btn--small">Zavolat</a>
-      </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
+    <!-- ===== ÚVOD ===== -->
     <section class="hero">
-      <div class="wrap hero__inner">
-        <div class="hero__text">
-          <p class="eyebrow">Golčův Jeníkov · Husova 86</p>
-          <h1>Káva, bubble&nbsp;tea<br>a <span class="hl">zmrzlina</span>.</h1>
-          <p class="lead">Malé místo s velkou chutí. Brazilská káva, bublinkové čaje, točená zmrzlina, frappé a sladké dezerty – každý den v týdnu.</p>
-          <div class="hero__cta">
-            <a href="#nabidka" class="btn">Co u nás máme</a>
-            <a href="#kontakt" class="btn btn--ghost">Otevírací doba</a>
-          </div>
-          <p class="hero__status" id="openStatus" aria-live="polite"></p>
-        </div>
-        <div class="hero__art" aria-hidden="true">
-          <div class="blob"></div>
-          <!-- Bubble tea illustration -->
-          <svg class="cup" viewBox="0 0 220 320">
-            <rect x="128" y="0" width="16" height="120" rx="6" fill="#1d1a14" transform="rotate(12 136 60)"/>
-            <path d="M30 70 h160 l-20 230 a14 14 0 0 1 -14 12 h-92 a14 14 0 0 1 -14 -12z" fill="#fff8e1" stroke="#1d1a14" stroke-width="6"/>
-            <path d="M40 130 h140 l-14 165 a8 8 0 0 1 -8 7 h-96 a8 8 0 0 1 -8 -7z" fill="#f2a33a"/>
-            <g fill="#1d1a14">
-              <circle cx="70" cy="280" r="10"/><circle cx="95" cy="286" r="10"/><circle cx="120" cy="282" r="10"/><circle cx="145" cy="286" r="10"/>
-              <circle cx="82" cy="262" r="10"/><circle cx="108" cy="264" r="10"/><circle cx="134" cy="262" r="10"/><circle cx="158" cy="266" r="9"/>
-              <circle cx="60" cy="262" r="8"/>
-            </g>
-            <rect x="20" y="58" width="180" height="22" rx="11" fill="#ebc000" stroke="#1d1a14" stroke-width="6"/>
-          </svg>
-          <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
-          <div class="sticker">5,0 ★<small>Google recenze</small></div>
+      <div class="hero__pearls" aria-hidden="true">
+        <span style="--x:4%;--y:86%;--s:16px"></span>
+        <span style="--x:46%;--y:84%;--s:12px"></span>
+        <span style="--x:52%;--y:16%;--s:10px"></span>
+        <span style="--x:94%;--y:30%;--s:20px"></span>
+        <span style="--x:88%;--y:86%;--s:12px"></span>
+      </div>
+
+      <div class="hero__inner">
+        <p class="hero__status" id="openStatus" aria-live="polite">&nbsp;</p>
+        <h1 class="hero__title">
+          <span class="line">Malá pauza,</span>
+          <span class="line"><em>velká radost.</em></span>
+        </h1>
+        <p class="hero__lead">Brazilská káva, bubble tea, točená zmrzlina, frappé a&nbsp;dezerty. Kousek od náměstí v&nbsp;Golčově Jeníkově.</p>
+        <div class="hero__cta">
+          <a href="nabidka.html" class="pill pill--dark pill--lg">Co si dáš?</a>
+          <a href="kontakt.html" class="pill pill--ghost pill--lg">Kudy k nám</a>
         </div>
       </div>
+
+      <div class="hero__photos">
+        <figure class="hero__photo hero__photo--big">
+          <img src="IMG/867406006_18115543799021674_6986882147659581351_n.webp" alt="Mléčný bubble tea s tapiokovými perlami v ruce" width="1440" height="1440" fetchpriority="high">
+        </figure>
+        <figure class="hero__photo hero__photo--small">
+          <img src="IMG/752643245_18101696459021674_5170873629198934193_n.webp" alt="Mangová točená zmrzlina před okénkem kavárny" width="1440" height="1440">
+        </figure>
+      </div>
+
+      <div class="hero__curve" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 120V60h560c40 0 60-60 160-60s120 60 160 60h560v60z"/></svg>
+      </div>
+      <a href="#galerie" class="hero__down" aria-label="Posunout na fotky">
+        <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>Brazilská káva</span><span>✦</span><span>Bubble tea</span><span>✦</span><span>Točená zmrzlina</span><span>✦</span><span>Frappé</span><span>✦</span><span>Dezerty</span><span>✦</span>
-        <span>Brazilská káva</span><span>✦</span><span>Bubble tea</span><span>✦</span><span>Točená zmrzlina</span><span>✦</span><span>Frappé</span><span>✦</span><span>Dezerty</span><span>✦</span>
+    <!-- ===== GALERIE ===== -->
+    <section class="gallery gallery--home" id="galerie" aria-labelledby="galleryTitle">
+      <div class="wrap gallery__head reveal">
+        <h2 id="galleryTitle">Přímo <em>z&nbsp;okénka</em></h2>
+        <a href="https://www.instagram.com/kavaabubble/" target="_blank" rel="noopener" class="pill pill--ghost">Víc na Instagramu&nbsp;→</a>
       </div>
-    </div>
-
-    <!-- NABÍDKA -->
-    <section class="section" id="nabidka">
-      <div class="wrap">
-        <p class="eyebrow">Nabídka</p>
-        <h2>Na co se u nás můžete těšit</h2>
-        <div class="cards">
-          <article class="card card--coffee">
-            <div class="card__icon">☕</div>
-            <h3>Brazilská káva</h3>
-            <p>Káva z brazilských zrn – na rychlé espresso po cestě i na pomalé latte k dezertu.</p>
-          </article>
-          <article class="card card--tea">
-            <div class="card__icon">🧋</div>
-            <h3>Bubble tea</h3>
-            <p>Bublinkové čaje v různých příchutích. Podle našich zákazníků ten nejlepší v okolí.</p>
-          </article>
-          <article class="card card--ice">
-            <div class="card__icon">🍦</div>
-            <h3>Točená zmrzlina</h3>
-            <p>Vanilka, mango nebo mix – v kornoutu i v kelímku. Když je teplo, nic lepšího není.</p>
-          </article>
-          <article class="card card--frappe">
-            <div class="card__icon">🥤</div>
-            <h3>Frappé</h3>
-            <p>Ledové, krémové a se šlehačkou. Osvěžení s sebou na cestu.</p>
-          </article>
-          <article class="card card--dessert">
-            <div class="card__icon">🍰</div>
-            <h3>Dezerty</h3>
-            <p>Tiramisu, ovocné tartaletky, laskonky a košíčky se šlehačkou. Nabídka se střídá – mrkněte na Instagram.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- AKCE -->
-    <section class="promo" id="akce">
-      <div class="wrap promo__inner">
-        <div class="promo__badge">−50&nbsp;%</div>
-        <div>
-          <p class="eyebrow eyebrow--dark">Aktuální akce</p>
-          <h2>K dezertu káva za polovinu</h2>
-          <p>Vyberte si jakýkoliv dezert a kávu k němu máte za poloviční cenu.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- RECENZE -->
-    <section class="section" id="recenze">
-      <div class="wrap">
-        <p class="eyebrow">Recenze</p>
-        <h2>5,0 <span class="stars" aria-label="5 hvězdiček">★★★★★</span></h2>
-        <p class="muted">Průměr z 26 hodnocení na Mapách Google.</p>
-        <div class="quotes">
-          <blockquote>
-            <p>„Skvělá zmrzlina a nejlepší bubble tea! Milujeme to tady.“</p>
-            <cite>Simona T.</cite>
-          </blockquote>
-          <blockquote>
-            <p>„Nejlepší bubble tea.“</p>
-            <cite>Jakub</cite>
-          </blockquote>
-          <blockquote>
-            <p>„Fajn zmrzlina, na cestě potěší.“</p>
-            <cite>Jakub Č.</cite>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- KONTAKT -->
-    <section class="section section--alt" id="kontakt">
-      <div class="wrap contact">
-        <div class="contact__info">
-          <p class="eyebrow">Kde nás najdete</p>
-          <h2>Zastavte se</h2>
-          <address>
-            <strong>Bubble Cafe</strong><br>
-            Husova 86<br>
-            582 82 Golčův Jeníkov
-          </address>
-          <p><a href="tel:+420720680461" class="link">720 680 461</a></p>
-
-          <table class="hours" aria-label="Otevírací doba">
-            <tbody>
-              <tr data-day="1"><th>Pondělí</th><td>11–18</td></tr>
-              <tr data-day="2"><th>Úterý</th><td>11–18</td></tr>
-              <tr data-day="3"><th>Středa</th><td>11–18</td></tr>
-              <tr data-day="4"><th>Čtvrtek</th><td>11–18</td></tr>
-              <tr data-day="5"><th>Pátek</th><td>11–18</td></tr>
-              <tr data-day="6"><th>Sobota</th><td>10–18</td></tr>
-              <tr data-day="0"><th>Neděle</th><td>10–18</td></tr>
-            </tbody>
-          </table>
-
-          <a class="btn" href="https://maps.app.goo.gl/pbF3T8M5UBwDashRA" target="_blank" rel="noopener">Navigovat</a>
-        </div>
-        <div class="contact__map">
-          <iframe
-            title="Mapa – Bubble Cafe, Husova 86, Golčův Jeníkov"
-            src="https://maps.google.com/maps?q=49.8180488,15.4758222&z=17&output=embed"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <div class="gallery__track">
+        <figure><img src="IMG/867406006_18115543799021674_6986882147659581351_n.webp" alt="Mléčný bubble tea s perlami" width="1440" height="1440" loading="lazy"></figure>
+        <figure><img src="IMG/848170183_18113528954021674_6414360546930213852_n.webp" alt="Cappuccino s latte art na stolku venku" width="1170" height="1170" loading="lazy"></figure>
+        <figure><img src="IMG/768555291_18104485046021674_1542284532686548519_n.webp" alt="Ovocné tartaletky s borůvkami na podnose" width="1440" height="1440" loading="lazy"></figure>
+        <figure><img src="IMG/845483574_18113222252021674_8766040224482675115_n.webp" alt="Mangová točená zmrzlina v kornoutu" width="1440" height="1440" loading="lazy"></figure>
+        <figure><img src="IMG/757454747_18102570536021674_7661208918829281333_n.webp" alt="Ledová káva a buchta" width="1170" height="1170" loading="lazy"></figure>
+        <figure><img src="IMG/763587535_18103642076021674_7545020357420582680_n.webp" alt="Růžová točená zmrzlina před kavárnou" width="1440" height="1440" loading="lazy"></figure>
+        <figure><img src="IMG/752643245_18101696459021674_5170873629198934193_n.webp" alt="Mangová zmrzlina před okénkem s logem" width="1440" height="1440" loading="lazy"></figure>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap footer__inner">
-      <a href="#top" class="logo logo--light"><span class="logo__dot"></span>Bubble&nbsp;Cafe</a>
-      <div class="footer__social">
-        <a href="https://www.instagram.com/kavaabubble/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.tiktok.com/@kavaabubble" target="_blank" rel="noopener">TikTok</a>
+    <div class="wrap">
+      <div class="footer__row">
+        <p class="footer__hello">Uvidíme se u&nbsp;okénka.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/kavaabubble/" target="_blank" rel="noopener" class="pill pill--dark">Instagram</a>
+          <a href="https://www.tiktok.com/@kavaabubble" target="_blank" rel="noopener" class="pill pill--ghost">TikTok</a>
+        </div>
       </div>
+      <p class="footer__word" aria-hidden="true">Bubble Cafe</p>
+      <p class="footer__egg">Až na dno kelímku! Tady jsou tvoje perly <i></i><i></i><i></i></p>
       <p class="footer__copy">© <span id="year"></span> Káva &amp; Bubble Tea Golčův Jeníkov</p>
     </div>
   </footer>

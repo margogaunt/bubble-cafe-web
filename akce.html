@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akce – Bubble Cafe Golčův Jeníkov</title>
+  <meta name="description" content="Aktuální akce v Bubble Cafe: k dezertu káva za polovinu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..900;1,9..40,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="IMG/708794094_18092274095021674_8489062694724276682_n.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="logo" aria-label="Bubble Cafe – úvod">
+        <span class="logo__badge" aria-hidden="true"><img src="IMG/708794094_18092274095021674_8489062694724276682_n.jpg" alt="" width="1080" height="1080"></span>
+        Bubble Cafe
+      </a>
+      <nav class="nav__menu" id="menu" aria-label="Hlavní menu">
+        <a href="nabidka.html">Nabídka</a>
+        <a href="akce.html" aria-current="page">Akce</a>
+        <a href="recenze.html">Recenze</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Otevřít menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-head page-head--peach">
+      <div class="wrap">
+        <p class="kicker">Akce</p>
+        <h1>Něco <em>navíc</em></h1>
+      </div>
+    </header>
+
+    <section class="promo-wrap">
+      <div class="wrap">
+        <div class="promo reveal">
+          <div class="promo__text">
+            <p class="kicker">Aktuální akce</p>
+            <h2 class="promo__title">K&nbsp;dezertu<br>káva <em>za&nbsp;půlku</em></h2>
+            <p class="promo__sub">Vyber si jakýkoliv dezert a kávu k němu máš za poloviční cenu.</p>
+          </div>
+          <div class="promo__art">
+            <span class="promo__badge" aria-hidden="true">−50&nbsp;%</span>
+            <figure class="promo__photo">
+              <img src="IMG/757454747_18102570536021674_7661208918829281333_n.webp" alt="Ledová káva a buchta na stolku" width="1170" height="1170">
+            </figure>
+          </div>
+        </div>
+        <p class="promo-note">Další akce dáváme jako první na <a href="https://www.instagram.com/kavaabubble/" target="_blank" rel="noopener">Instagram</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__row">
+        <p class="footer__hello">Uvidíme se u&nbsp;okénka.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/kavaabubble/" target="_blank" rel="noopener" class="pill pill--dark">Instagram</a>
+          <a href="https://www.tiktok.com/@kavaabubble" target="_blank" rel="noopener" class="pill pill--ghost">TikTok</a>
+        </div>
+      </div>
+      <p class="footer__word" aria-hidden="true">Bubble Cafe</p>
+      <p class="footer__egg">Až na dno kelímku! Tady jsou tvoje perly <i></i><i></i><i></i></p>
+      <p class="footer__copy">© <span id="year"></span> Káva &amp; Bubble Tea Golčův Jeníkov</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

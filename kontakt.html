@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt – Bubble Cafe Golčův Jeníkov</title>
+  <meta name="description" content="Bubble Cafe, Husova 86, Golčův Jeníkov. Otevírací doba, telefon a mapa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..900;1,9..40,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="IMG/708794094_18092274095021674_8489062694724276682_n.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="logo" aria-label="Bubble Cafe – úvod">
+        <span class="logo__badge" aria-hidden="true"><img src="IMG/708794094_18092274095021674_8489062694724276682_n.jpg" alt="" width="1080" height="1080"></span>
+        Bubble Cafe
+      </a>
+      <nav class="nav__menu" id="menu" aria-label="Hlavní menu">
+        <a href="nabidka.html">Nabídka</a>
+        <a href="akce.html">Akce</a>
+        <a href="recenze.html">Recenze</a>
+        <a href="kontakt.html" aria-current="page">Kontakt</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Otevřít menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-head page-head--sage">
+      <div class="wrap">
+        <p class="kicker">Kontakt</p>
+        <h1>Zastav se <em>na&nbsp;chvilku.</em></h1>
+      </div>
+    </header>
+
+    <section class="visit">
+      <div class="wrap visit__grid">
+        <div class="visit__info reveal">
+          <h2 class="visit__title">Kde nás najdeš</h2>
+          <address>
+            Bubble Cafe<br>Husova 86<br>582 82 Golčův Jeníkov
+          </address>
+          <a href="tel:+420720680461" class="visit__phone">720 680 461</a>
+
+          <h2 class="visit__title">Otevírací doba</h2>
+          <dl class="hours" aria-label="Otevírací doba">
+            <div data-day="1"><dt>Pondělí</dt><dd>11–18</dd></div>
+            <div data-day="2"><dt>Úterý</dt><dd>11–18</dd></div>
+            <div data-day="3"><dt>Středa</dt><dd>11–18</dd></div>
+            <div data-day="4"><dt>Čtvrtek</dt><dd>11–18</dd></div>
+            <div data-day="5"><dt>Pátek</dt><dd>11–18</dd></div>
+            <div data-day="6"><dt>Sobota</dt><dd>10–18</dd></div>
+            <div data-day="0"><dt>Neděle</dt><dd>10–18</dd></div>
+          </dl>
+
+          <a class="pill pill--dark pill--lg" href="https://maps.app.goo.gl/pbF3T8M5UBwDashRA" target="_blank" rel="noopener">Navigovat</a>
+        </div>
+        <div class="visit__map reveal">
+          <iframe
+            title="Mapa – Bubble Cafe, Husova 86, Golčův Jeníkov"
+            src="https://maps.google.com/maps?q=49.8180488,15.4758222&z=17&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__row">
+        <p class="footer__hello">Uvidíme se u&nbsp;okénka.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/kavaabubble/" target="_blank" rel="noopener" class="pill pill--dark">Instagram</a>
+          <a href="https://www.tiktok.com/@kavaabubble" target="_blank" rel="noopener" class="pill pill--ghost">TikTok</a>
+        </div>
+      </div>
+      <p class="footer__word" aria-hidden="true">Bubble Cafe</p>
+      <p class="footer__egg">Až na dno kelímku! Tady jsou tvoje perly <i></i><i></i><i></i></p>
+      <p class="footer__copy">© <span id="year"></span> Káva &amp; Bubble Tea Golčův Jeníkov</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
